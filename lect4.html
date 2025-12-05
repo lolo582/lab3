@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>web 2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div>
+        <p id="id1">Wellcome</p>
+        <button id="btn" onclick="change()">Change color</button>
+    </div>
+    <script>
+     window.addEventListener('load', ()=> {
+        document.body.style.backgroundColor = 'orange';
+        });
+        const para=document.getElementById("id1");
+        para.style.color="red";
+        para.style.fontSize="50px";
+
+        let ele=document.createElement("div");
+        ele.textContent="This lecture 4!";
+        ele.style.color="gray";
+        ele.style.fontSize="35px";
+        ele.style.fontFamily="Arial";
+        document.body.appendChild(ele);
+        function change(){
+            const bod=document.body;
+            if(bod.style.backgroundColor==="blue"){
+                bod.style.backgroundColor="yellow";
+            }
+            else
+            bod.style.backgroundColor="blue";
+            
+            //document.body.style.backgroundColor="blue";
+        }
+    </script>
+</body>
+</html>
